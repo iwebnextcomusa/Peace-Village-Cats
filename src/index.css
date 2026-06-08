@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer utilities {
+  /* Neon glow effects */
+  .shadow-neon-emerald {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.2), 0 0 3px rgba(16, 185, 129, 0.4);
+  }
+  .shadow-neon-emerald-lg {
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.35), 0 0 10px rgba(16, 185, 129, 0.5);
+  }
+  .shadow-neon-teal {
+    box-shadow: 0 0 15px rgba(20, 184, 166, 0.2), 0 0 3px rgba(20, 184, 166, 0.4);
+  }
+  
+  /* Glassmorphism utility */
+  .glassmorphism {
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .glassmorphism-hover {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .glassmorphism-hover:hover {
+    background: rgba(15, 23, 42, 0.7);
+    border-color: rgba(16, 185, 129, 0.25);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+  }
+  
+  /* Hide scrollbars */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+/* Custom Scroll Smooth */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Webkit Scrollbars for futuristic theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}

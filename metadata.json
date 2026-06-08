@@ -1,0 +1,8 @@
+{
+  "name": "Pace Village Cats Sanctuary",
+  "description": "A futuristic 3D scroll-based animal rescue and sanctuary website located in Homosassa, FL with an AI-powered chatbot.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
